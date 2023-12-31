@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root{
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --fs-heading-primary: 8.8rem;
+    --fs-heading-secondary: 4rem;
+    --fs-text-primary: 2rem;
+    --fs-text-secondary: 1.6rem;
+    --fs-button: 1.8rem;
+    --fs-footer: 1.6rem;
+
+    --lh-heading: 8.8rem;
+    --lh-text-primary: 3.4rem;
+    --lh-text-secondary: 2.6rem;
+
+    --clr-primary: hsla(244, 23%, 12%, 1);
+    --clr-secondary: hsla(20, 33%, 98%, 1);
+    --clr-accent: hsla(12, 94%, 65%, 1);
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+   text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+   
+body{
+   font-family: 'Manrope', sans-serif;
+   font-size: var(--fs-body);
+   width: 100vw;
+   min-height: 100vh;
+   font-family: 'IBM Plex Sans', sans-serif;
+   position: relative;
+   overflow-x: hidden;
+ 
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 6.2rem;
+    padding-bottom: 32rem;
+    background: url(assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: -270px -270px;
+}
+
+.bg-pattern-1{
+    position: absolute;
+    right: 0;
+    transform: translateY(-25%);
+}
+
+.banner{
+    
+    padding-right: 24rem;
+}
+
+.banner-heading{
+    font-size: var(--fs-heading-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    line-height: var(--lh-heading);
+    padding-bottom: 4rem;
+    padding-top: 12.7rem;
+    
+}
+
+
+.banner-description{
+    font-size: var(--fs-text-primary);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text-primary);
+    color: var(--clr-primary);
+    
+}
+
+
+.premium{
+    display: flex;
+    background-color: var(--clr-primary);
+    padding-left: 11rem;
+    padding-right: 9.5rem;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 20rem;
+   
+}
+
+.bg-pattern-2{
+    position: absolute;
+    top:-3rem;
+    transform: translateX(75%);
+}
+
+.illustration-app img{
+    position: absolute;
+    max-width: 31rem;
+    transform: translateY(-200px);
+    
+}
+
+.download{
+    background-color: var(--clr-accent);
+    padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+    transform: translateY(115px);
+    max-width: 44.6rem; 
+    border-radius: 12px;
+    
+}
+
+
+.download-heading{
+    font-size: var(--fs-heading-secondary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary);
+    padding-bottom: 2.2rem;
+}
+
+.download-description{
+    font-size: var(--fs-text-secondary);
+    font-weight: var(--fw-regular);
+    color: var(--clr-secondary);
+    line-height: var(--lh-text-primary);
+    padding-bottom: 3.9rem;
+}
+
+.download-price{
+    font-size: 6.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary);
+    display: flex;
+    align-items: center;
+    gap:1.6rem;
+    padding-bottom: 4.6rem;
+}
+
+.download-price span{
+    font-size: var(--fs-text-primary);
+    font-weight: var(--fw-regular);
+    
+}
+
+button{
+    width: 33.3rem;
+    height: 6.1rem;
+    font-size: var(--fs-button);
+    font-weight: var(--fw-bold);
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem   
+}
+
+.download-buttons{
+    display: flex;
+    flex-direction: column;
+    gap:1.6rem;
+}
+
+.ios-download{
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.ios-download:hover{
+    background-color: hsla(177, 68%, 64%, 1);
+    cursor: pointer;
+}
+
+.android-download:hover{
+    background-color: hsla(33, 100%, 70%, 1);
+    cursor: pointer;
+}
+
+.android-download{
+    background-color: var(--clr-secondary);
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9.1rem;
+}
+
+.footer-column-left{
+    display: flex;
+    gap: 13.7rem;
+}
+
+.footer-info{
+    max-width: 37.7rem;
+    font-size: var(--fs-footer);
+    color: var(--clr-primary);
+    line-height: var(--lh-text-secondary);
+}
+
+.e-mail{
+    color: var(--clr-primary);
+    font-weight: var(--fw-bold);
+}
+
+.social-icons{
+    display: flex;
+    gap:1.8rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    :root{
+    --fs-heading-primary: 6.4rem;
+    --fs-heading-secondary: 3.2rem;
+    --fs-text-primary: 1.8rem;
+    --fs-text-secondary: 1.8rem;
+    --fs-button: 1.8rem;
+    --lh-heading: 6.4rem;
+    --lh-text-primary: 2.8rem;
+    --lh-text-secondary: 2.8rem;
+
+    }
+
+    .container{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    header{
+        padding-top: 6.2rem;
+        padding-bottom: 32rem;
+        background: url(assets/bg-main-tablet.png);
+        background-repeat: no-repeat;
+        background-position: -380px -300px;
+    }
+
+    .bg-pattern-1{
+        position: absolute;
+        right: -5rem;
+        transform: translateY(-25%);
+    }
+
+    .banner-heading{
+        padding-top: 9.5rem;
+        padding-bottom: 2.8rem;
+  }
+
+  .premium{
+    display: flex;
+    background-color: var(--clr-primary);
+    padding-left: 5.8rem;
+    padding-right: 6.4rem;
+    position: relative;
+    justify-content: space-between;
+   
+}
+
+.download{
+    background-color: var(--clr-accent);
+    padding: 4.8rem;
+    transform: translateY(115px);
+    max-width: 44.6rem; 
+    border-radius: 12px;
+    
+}
+
+.download-heading{
+    padding-bottom: 1.2rem;
+}
+
+.download-description{
+    padding-bottom: 3.6rem;
+}
+
+.download-price{
+    padding-bottom: 3.6rem;
+}
+
+.illustration-app img{
+    position: absolute;
+    max-width: 27rem;
+    transform: translateY(-170px);
+    
+}
+
+.download{
+    background-color: var(--clr-accent);
+    padding: 4.8rem;
+    transform: translateY(115px);
+    max-width: 40rem; 
+    border-radius: 12px;
+    
+}
+
+.download-buttons{
+    align-items: center;
+    
+}
+
+button{
+    width: 29.6rem;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .footer-column-left{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+   
+
+}
+
+  @media only screen and (max-width: 700px){
+
+    :root{
+        --fs-heading-primary: 4rem;
+        --fs-heading-secondary: 3.2rem;
+        --fs-text-primary: 1.6rem;
+        --fs-text-secondary: 1.6rem;
+        --fs-button: 1.8rem;
+        --lh-heading: 4.8rem;
+        --lh-text-primary: 2.6rem;
+        --lh-text-secondary: 2.8rem;
+    
+        }
+
+    .container{
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    header{
+        padding-top: 6.2rem;
+        padding-bottom: 32rem;
+        background: url(assets/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: right -230px bottom 100px;
+    }
+    
+        .bg-pattern-1{
+        display: none;
+    }
+    
+    header{
+        padding-top: 4rem;
+        padding-bottom: 20.6rem;
+    }
+
+    .banner{
+        padding-right: 0;
+    }
+
+    .banner-heading{
+        padding-top: 6.4rem;
+        padding-bottom: 2.0rem;
+    }
+
+    main .container{
+        padding: 0;
+    }
+
+    .premium{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 6.4rem;
+    }
+
+    .illustration-app img{
+        position: static;
+        transform: translateY(-100px);
+        max-height: 43rem;
+    }
+
+    .download{
+        transform: translateY(0);
+        max-width: 100%;
+        padding: 4.8rem 3.7rem 4.8rem 3.7rem;
+    }
+
+    .download-buttons{
+        align-items: flex-start;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 9.1rem;
+        gap: 6.4rem;
+    }
+    
+    .bg-pattern-2{
+        position: absolute;
+        top:0rem;
+        transform: translateX(0%);
+    }
+}
