@@ -56,10 +56,10 @@ img{
 }
 
 .container{
-    max-width: 1440px;
-    padding-left: 16.5rem;
-    padding-right: 16.5rem;
+    max-width: 1110px;
     margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 header{
@@ -68,17 +68,21 @@ header{
     background: url(assets/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-position: -270px -270px;
+    position: relative;
+    z-index: -2;
 }
 
 .bg-pattern-1{
     position: absolute;
     right: 0;
     transform: translateY(-25%);
+    z-index: -1;
 }
 
 .banner{
-    
-    padding-right: 24rem;
+   
+    /* padding-right: 24rem; */
+    max-width: 87rem;
 }
 
 .banner-heading{
@@ -240,7 +244,7 @@ footer .container{
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1023px) {
     
     :root{
     --fs-heading-primary: 6.4rem;
@@ -254,10 +258,7 @@ footer .container{
 
     }
 
-    .container{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+  
 
     header{
         padding-top: 6.2rem;
@@ -265,6 +266,12 @@ footer .container{
         background: url(assets/bg-main-tablet.png);
         background-repeat: no-repeat;
         background-position: -380px -300px;
+    }
+
+    .banner{
+   
+        /* padding-right: 24rem; */
+        max-width: 51rem;
     }
 
     .bg-pattern-1{
