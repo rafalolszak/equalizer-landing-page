@@ -235,6 +235,11 @@ footer .container{
 }
 
 
+.social-icon:hover{
+    fill:var(--clr-accent);
+}
+
+
 @media only screen and (max-width: 1200px) {
     
     :root{
