@@ -148,7 +148,7 @@ header{
 }
 
 .download-description{
-    font-size: var(--fs-text-secondary);
+    font-size: var(--fs-text-primary);
     font-weight: var(--fw-regular);
     color: var(--clr-secondary);
     line-height: var(--lh-text-primary);
@@ -295,14 +295,6 @@ footer .container{
    
 }
 
-.download{
-    background-color: var(--clr-accent);
-    padding: 4.8rem;
-    transform: translateY(115px);
-    max-width: 44.6rem; 
-    border-radius: 12px;
-    
-}
 
 .download-heading{
     padding-bottom: 1.2rem;
